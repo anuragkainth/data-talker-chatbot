@@ -1,4 +1,4 @@
-# DataTalk a React, Node.js, and Supabase Chatbot
+# DataTalk a React, Node.js, and PostgreSQL Chatbot
 
 This is a chatbot application built using React, Node.js, and Supabase. The chatbot interacts with a PostgreSQL database to fetch product details based on user prompts.
 
