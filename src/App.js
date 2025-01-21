@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     const fetchHelp = async () => {
       try {
-        const response = await axios.post('http://localhost:8000/api/chat', { message: 'help' });
+        const response = await axios.post('https://data-talker-chatbot.onrender.com/api/chat', { message: 'help' });
   
         if (response.data.products && response.data.products.length > 0) {
           setMessages([
@@ -46,7 +46,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:8000/api/chat', {
+      const response = await axios.post('https://data-talker-chatbot.onrender.com/api/chat', {
         message: userMessage
       });
 
@@ -77,7 +77,7 @@ function App() {
   return (
     <div className="flex flex-col h-screen bg-gray-100">
       <div className="bg-white shadow-md p-4">
-        <h1 className="text-2xl font-bold text-center text-gray-800">Chatbot Assistant</h1>
+        <h1 className="text-2xl font-bold text-center text-gray-800">DataTalker Chatbot Assistant</h1>
       </div>
 
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
