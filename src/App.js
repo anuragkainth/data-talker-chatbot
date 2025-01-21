@@ -77,7 +77,7 @@ function App() {
   return (
     <div className="flex flex-col h-screen bg-gray-100">
       <div className="bg-white shadow-md p-4">
-        <h1 className="text-2xl font-bold text-center text-gray-800">DataTalker Chatbot Assistant</h1>
+        <h1 className="text-2xl font-bold text-center text-gray-800">DataTalker 🤖 Chatbot Assistant</h1>
       </div>
 
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
