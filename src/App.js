@@ -88,7 +88,7 @@ function App() {
           >
             <div
               className={`max-w-[70%] rounded-lg p-3 ${message.sender === 'user'
-                  ? 'bg-blue-500 text-white'
+                  ? 'bg-blue-600 text-white'
                   : 'bg-gray-200 text-gray-800'
                 }`}
             >
@@ -99,7 +99,7 @@ function App() {
         {isLoading && (
           <div className="flex justify-start">
             <div className="bg-gray-200 text-gray-800 rounded-lg p-3">
-              Thinking...
+            Thinking It Over...
             </div>
           </div>
         )}
@@ -113,12 +113,12 @@ function App() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Type your message..."
-            className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
           />
           <button
             type="submit"
             disabled={isLoading}
-            className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 disabled:opacity-50"
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-600 disabled:opacity-50"
           >
             Send
           </button>
